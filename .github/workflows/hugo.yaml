@@ -39,7 +39,7 @@ jobs:
       - name: download dependecies
         run : ./scripts/sync-data.sh
       - name: Install Node.js dependencies
-        run: "npm i"
+        run: npm i
       - name : use docker 
         run : docker compose run --rm hugo hugo       
       - name: Upload artifact
