@@ -36,6 +36,8 @@ jobs:
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2   
+      - name: download dependecies
+        run : ./scripts/sync-data.sh
       - name : use docker 
         run : docker compose run --rm hugo hugo       
       - name: Upload artifact
