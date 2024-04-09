@@ -42,8 +42,10 @@ jobs:
         run: npm ci
       - name: Install Dart Sass
         run: sudo snap install dart-sass
+      - name: install hugo 
+        run : sudo snap install hugo
       - name : use docker 
-        run : hugo server --baseURL https://open-energy-transition-hugo-latest.github.io/       
+        run : hugo server 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
