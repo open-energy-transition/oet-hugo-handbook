@@ -40,10 +40,10 @@ jobs:
         run : ./scripts/sync-data.sh
       - name: Install Node.js dependencies
         run: npm ci
-      # - name: Install Dart Sass
-      #   run: sudo snap install dart-sass
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
       - name : use docker 
-        run : docker compose run --rm hugo hugo       
+        run : hugo server --baseURL https://open-energy-transition-hugo-latest.github.io/       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
