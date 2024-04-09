@@ -39,9 +39,9 @@ jobs:
       - name: download dependecies
         run : ./scripts/sync-data.sh
       - name: Install Node.js dependencies
-        run: npm i
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
+        run: npm ci
+      # - name: Install Dart Sass
+      #   run: sudo snap install dart-sass
       - name : use docker 
         run : docker compose run --rm hugo hugo       
       - name: Upload artifact
