@@ -45,7 +45,7 @@ jobs:
       - name: install hugo 
         run : sudo snap install hugo
       - name : use docker 
-        run : hugo server 
+        run : hugo 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
