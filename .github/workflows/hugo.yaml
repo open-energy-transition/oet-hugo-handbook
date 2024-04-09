@@ -45,7 +45,7 @@ jobs:
       - name: install hugo 
         run : sudo snap install hugo
       - name : use docker 
-        run : hugo --baseURL https://open-energy-transition-hugo-latest.github.io/
+        run : hugo --baseURL https://handbook.gitlab.com
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
