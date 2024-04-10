@@ -1,4 +1,5 @@
 baseURL: https://open-energy-transition-hugo-latest.github.io/
+relativeURLs: true
 languageCode: en-US
 locale: en-US
 title: The GitLab Handbook
@@ -110,7 +111,6 @@ security:
     getenv: [ "^HUGO_", "PERISCOPE_EMBED_API_KEY", "PRODUCT_ANALYTICS_APP_KEY", "PRODUCT_ANALYTICS_HOST" ]
 
 canonifyURLs: true
-enableGitInfo: true
 pluralizeListTitles: false
 enableEmoji: true
 

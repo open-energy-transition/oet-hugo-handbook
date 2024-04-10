@@ -39,13 +39,13 @@ jobs:
       - name: download dependecies
         run : ./scripts/sync-data.sh
       - name: Install Node.js dependencies
-        run: npm ci
+        run: npm i
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: install hugo 
         run : sudo snap install hugo
-      - name : use docker 
-        run : hugo --baseURL https://handbook.gitlab.com
+      - name : use hugo 
+        run : hugo 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
