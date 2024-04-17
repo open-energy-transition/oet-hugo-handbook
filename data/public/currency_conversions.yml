@@ -1,0 +1,204 @@
+# Reach out to the following teams before making any
+# structural changes to this file:
+# - People Ops Engineering Team (uses this file for automation)
+# - Total Rewards Team (DRI for this file)
+
+
+updated_at: 2023-11-01
+currency_rates:
+  - currency_code: AUD
+    rate_from_usd: 1.55748
+    rate_to_usd: 0.64206
+    symbol: A$
+    countries:
+      - Australia
+  - currency_code: AED
+    rate_from_usd: 3.67300
+    rate_to_usd: 0.27226
+    symbol: د.إ
+    countries:
+      - United Arab Emirates
+  - currency_code: BRL
+    rate_from_usd: 4.95520
+    rate_to_usd: 0.20181
+    symbol: R$
+    countries:
+      - Brazil
+  - currency_code: CAD
+    rate_from_usd: 1.38368
+    rate_to_usd: 0.72271
+    symbol: C$
+    countries:
+      - Canada
+  - currency_code: CHF
+    rate_from_usd: 0.90581
+    rate_to_usd: 1.10398
+    symbol: CHf
+    countries:
+      - Switzerland
+  - currency_code: CLP
+    rate_from_usd: 895.68000
+    rate_to_usd: 0.0011165
+    symbol: C$
+    countries:
+      - Chile
+  - currency_code: CNY
+    rate_from_usd: 7.31690
+    rate_to_usd: 0.13667
+    symbol: ¥
+    countries:
+      - China
+  - currency_code: CZK
+    rate_from_usd: 23.31070
+    rate_to_usd: 0.04290
+    symbol: Kč
+    countries:
+      - Czech Republic
+  - currency_code: DKK
+    rate_from_usd: 7.05212
+    rate_to_usd: 0.14180
+    symbol: Kr
+    countries:
+      - Denmark
+  - currency_code: EUR
+    rate_from_usd: 0.94475
+    rate_to_usd: 1.05848
+    symbol: €
+    countries:
+      - Austria
+      - Belgium
+      - Cyprus
+      - Estonia
+      - Finland
+      - France
+      - Germany
+      - Greece
+      - Ireland
+      - Italy
+      - Latvia
+      - Lithuania
+      - Luxembourg
+      - Malta
+      - Netherlands
+      - Portugal
+      - Slovakia
+      - Slovenia
+      - Spain
+  - currency_code: GBP
+    rate_from_usd: 0.82111
+    rate_to_usd: 1.21786
+    symbol: £
+    countries:
+      - United Kingdom
+  - currency_code: HUF
+    rate_from_usd: 362.32000
+    rate_to_usd: 0.00276
+    symbol: Ft
+    countries:
+      - Hungary
+  - currency_code: ILS
+    rate_from_usd: 4.01415
+    rate_to_usd: 0.24912
+    symbol: ₪
+    countries:
+      - Israel
+  - currency_code: INR
+    rate_from_usd: 85.20150
+    rate_to_usd: 0.01174
+    symbol: ₹
+    countries:
+      - India
+  - currency_code: JPY
+    rate_from_usd: 150.60750
+    rate_to_usd: 0.00664
+    symbol: ¥
+    countries:
+      - Japan
+  - currency_code: KES
+    rate_from_usd: 150.85000
+    rate_to_usd: 0.00663
+    symbol: K
+    countries:
+      - Kenya
+  - currency_code: KRW
+    rate_from_usd: 1348.84000
+    rate_to_usd: 0.0007414
+    symbol: ₩
+    countries:
+      - South Korea
+  - currency_code: MAD
+    rate_from_usd: 10.30875
+    rate_to_usd: 0.09700
+    countries:
+      - Morocco
+  - currency_code: MXN
+    rate_from_usd: 17.76510
+    rate_to_usd: 0.05629
+    symbol: M$
+    countries:
+      - Mexico
+  - currency_code: NOK
+    rate_from_usd: 11.14834
+    rate_to_usd: 0.08970
+    symbol: kr
+    countries:
+      - Norway
+  - currency_code: NZD
+    rate_from_usd: 1.70164
+    rate_to_usd: 0.58767
+    symbol: N$
+    countries:
+      - New Zealand
+  - currency_code: PHP
+    rate_from_usd: 56.67900
+    rate_to_usd: 0.01764
+    symbol: ₱
+    countries:
+      - Philippines
+  - currency_code: PLN
+    rate_from_usd: 4.22134
+    rate_to_usd: 0.23689
+    symbol: zł
+    countries:
+      - Poland
+  - currency_code: RON
+    rate_from_usd: 4.69500
+    rate_to_usd: 0.21299
+    symbol: lei
+    countries:
+      - Romania
+  - currency_code: RUB
+    rate_from_usd: 92.61000
+    rate_to_usd: 0.01080
+    symbol: ₽
+    countries:
+      - Russia
+  - currency_code: SEK
+    rate_from_usd: 11.16738
+    rate_to_usd: 0.08955
+    symbol: kr
+    countries:
+      - Sweden
+  - currency_code: SGD
+    rate_from_usd: 1.36657
+    rate_to_usd: 0.73176
+    symbol: S$
+    countries:
+      - Singapore
+  - currency_code: TRY
+    rate_from_usd: 28.32820
+    rate_to_usd: 0.03530
+    symbol: ₺
+    countries:
+      - Turkey
+  - currency_code: USD
+    rate_from_usd: 1
+    rate_to_usd: 1
+    symbol: $
+    countries: []
+  - currency_code: ZAR
+    rate_from_usd: 18.47975
+    rate_to_usd: 0.05411
+    symbol: R
+    countries:
+      - South Africa

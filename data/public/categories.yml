@@ -1,0 +1,2423 @@
+# Categories that GitLab has offerings in which drives the
+# - GitLab product handbook categories page: https://handbook.gitlab.com/handbook/product/categories
+# - GitLab platform page catergories table: https://about.gitlab.com/platform/
+
+# Format description and documentation for this file can be seen in the following handbook entry:
+# https://about.gitlab.com/handbook/marketing/digital-experience/website/#working-with-stages-groups-and-categories
+
+user_management:
+  name: 'User Management'
+  stage: govern
+  feature_labels:
+    - user management
+  documentation: https://docs.gitlab.com/ee/user/profile/account/create_accounts.html
+  direction: /direction/govern/authentication/user-management
+  description: 'User Management provides tools to administer users and their attributes. From GitLab you can provision users, configure access control, manage user settings, and review user attributes.'
+  roi: true
+  available: 2017-10-01
+  viable: 2018-06-22
+  competitive:
+  complete:
+  maturity: viable
+  dogfooding_status: Active
+  marketing: false
+  priority_level: high
+
+system_access:
+  name: 'System Access'
+  stage: govern
+  feature_labels:
+    - saml
+    - ldap
+    - oauth
+    - authentication
+    - 2FA
+  documentation: https://docs.gitlab.com/ee/administration/auth/
+  direction: /direction/govern/authentication/system-access
+  description: 'System Access provides tools to authenticate through all points of GitLab (UI, CLI, API). These tools allow you to configure what an individual/process has access to once they authenticate, determined by their role. GitLab integrates with several OmniAuth providers, LDAP, SAML, and more.'
+  roi: true
+  available: 2017-10-01
+  viable: 2018-06-22
+  competitive: 
+  complete:
+  maturity: viable
+  dogfooding_status: Active
+  marketing: false
+
+permissions:
+  name: 'Permissions'
+  stage: govern
+  feature_labels:
+  documentation: https://docs.gitlab.com/ee/user/permissions.html
+  direction: /direction/govern/authorization
+  description: 'GitLab provides various permissions and roles in order to evaluate what access or rights an identity should have in an environment. Custom roles can also be created to allow an organization to create user roles with the precise privileges and permissions desired.'
+  roi: true
+  available: 2023-03-01
+  viable: 2023-10-01
+  competitive: 
+  complete:
+  maturity: viable
+  dogfooding_status: Active
+  marketing: false
+
+importers:
+  name: 'Importers'
+  label: 'Category:Importers'
+  stage: manage
+  feature_labels:
+    - import
+    - project export
+    - project import
+  description: 'Import existing work into GitLab from a wide variety of sources.'
+  documentation: https://docs.gitlab.com/ee/user/project/import/
+  direction: /direction/manage/import_and_integrate/importers/
+  dogfooding_status: Active
+  dogfooding_issue: https://gitlab.com/gitlab-org/gitlab/-/issues/331469
+  dogfooding_group: Professional Services
+  ux_scorecard_score: '-'
+  marketing: false
+  roi: false
+  priority_level: high
+
+internationalization:
+  name: 'Internationalization'
+  label: 'Category:Internationalization'
+  stage: manage
+  documentation: https://docs.gitlab.com/ee/development/i18n/
+  direction: /direction/manage/import_and_integrate/internationalization/
+  description: 'Support for crowd-sourced internationalization of GitLab.'
+  dogfooding_status: Active
+  dogfooding_issue: https://gitlab.com/gitlab-org/gitlab/-/issues/339601
+  dogfooding_group: All (non-English)
+  ux_scorecard_score: '-'
+  marketing: false
+  roi: false
+  priority_level: low
+
+team_planning:
+  name: Team Planning
+  stage: plan
+  label: Category:Team Planning
+  feature_labels:
+    - assignees
+    - move and clone work items
+    - work item detail page
+    - status
+    - issue and work items weight
+    - issue and work items dates
+    - issues
+    - labels
+    - markdown
+    - milestones
+    - iterations
+    - notifications
+    - todos
+    - time tracking
+    - discussions
+    - emojis
+    - internal notes
+    - work items
+    - MR linking to issues
+    - development work items widget
+    - work items settings and configuration
+    - description
+    - participants
+    - issue description diff
+  documentation: https://docs.gitlab.com/ee/topics/plan_and_track.html#team-planning
+  direction: /direction/plan/project_management/team_planning/
+  feature_page: /features/?stage=plan#team_planning
+  description: 'A wide range of flexible planning features allow you to plan, organize, and track team progress in the platform where you create software.'
+  roi: true
+  available: 2017-01-01
+  viable: 2018-01-01
+  competitive: 2024-06-22
+  complete: 2024-12-22
+  new_maturity: true
+  maturity: viable
+  marketing: true
+  priority_level: high
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/450
+  ux_scorecard_score: D
+  dogfooding_status: Active
+  competitors:
+    github:
+      maturity: complete
+      documentation: https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues
+
+portfolio_management:
+  name: 'Portfolio Management'
+  stage: plan
+  label: Category:Portfolio Management
+  feature_labels:
+    - epics
+    - sub epics
+    - issues and epic lists
+    - issue and epic boards
+    - issue and epic dates
+    - roadmaps
+    - health status
+    - linked items
+    - parent/child items widget
+    - relationships of work items
+    - epic data rollups
+    - work items filters
+    - issue and epic filters
+    - bulk editing
+    - import/export of work items
+    - quick actions
+  documentation: https://docs.gitlab.com/ee/topics/plan_and_track.html#portfolio-management
+  direction: /direction/plan/portfolio_management/
+  feature_page: /features/?stage=plan#portfolio_management
+  description: 'Manage complex initiatives using epics, boards, roadmaps, milestones, and more within the platform where your teams create software.'
+  roi: false
+  available: 2018-01-01
+  viable: 2019-05-22
+  competitive: 2024-12-31
+  complete: 2025-07-01
+  maturity: viable
+  marketing: true
+  priority_level: high
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/489
+  ux_scorecard_score: C
+  body: |
+    ## Plan and manage work between multiple groups and projects with Epics and Milestones
+
+    ### Drive Alignment
+
+    * Plan and deliver with clear objectives and timelines
+    * Create and link multiple epics together to represent complex development plans
+    * Map out time based delivery schedules and agile sprints with milestones
+
+    ### Manage portfolio delivery
+
+    * Communicate status and future changes
+    * Prioritize epics to ensure alignment
+    * Identify cross-project relationships
+    * Track status and delivery
+  dogfooding_status: Active
+  competitors:
+    github:
+      maturity: complete
+      documentation: https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects
+
+okr_management:
+  name: 'OKR Management'
+  stage: plan
+  label: Category:OKR Management
+  feature labels:
+    - objectives
+    - key results
+    - progress
+  documentation: https://docs.gitlab.com/ee/user/okrs.html
+  direction: /direction/plan/okr_management
+  description: 'Align team goals and track progress with OKR Management, fostering transparency, focus, and collaboration across your organization.'
+  roi: false
+  maturity: minimal
+  marketing: false
+  priority_level: low
+  dogfooding_status: Active
+
+requirements_management:
+  name: 'Requirements Management'
+  stage: plan
+  label: Category:Requirements Management
+  documentation: https://docs.gitlab.com/ee/user/project/requirements/
+  direction: /direction/plan/
+  description: 'Ensure your products meet industry standards and business objectives using requirements.'
+  roi: false
+  available: 2020-02-22
+  feature_labels:
+    - requirements
+    - link requirements to test cases
+    - merge request to issue traceability
+  maturity: minimal
+  marketing: false
+  priority_level: high
+  ux_scorecard_link:
+  ux_scorecard_score:
+  dogfooding_status: Not Planned
+
+quality_management:
+  name: 'Quality Management'
+  label: Category:Quality Management
+  stage: plan
+  documentation: https://docs.gitlab.com/ee/ci/test_cases/index.html
+  direction: /direction/plan/
+  description: 'Testing for quality ensures you are meeting the expectations of your users. Plan and track testing and quality of your product, manage test results, and create action items all in one platform.'
+  roi: false
+  available: 2020-11-22
+  feature_labels:
+    - test cases
+  maturity: minimal
+  marketing: false
+  priority_level: low
+  ux_scorecard_link:
+  ux_scorecard_score:
+  dogfooding_status: Active
+
+design_management:
+  name: 'Design Management'
+  label: Category:Design Management
+  stage: plan
+  documentation: https://docs.gitlab.com/ee/user/project/issues/design_management.html
+  direction: /direction/plan/
+  description: 'Streamline design reviews and centralize project assets fostering seamless collaboration within cross-functional teams.'
+  roi: false
+  available: 2019-08-22
+  viable: 2020-12-22
+  feature_labels:
+    - design assets
+    - link issues to designs
+    - figma plugin
+  maturity: viable
+  new_maturity: true
+  marketing: false
+  priority_level: medium
+  ux_scorecard_link:
+  ux_scorecard_score:
+  dogfooding_status: Active
+
+dora_metrics:
+  name: 'DORA Metrics'
+  stage: plan
+  feature_labels:
+    - DORA Metrics
+  documentation: https://docs.gitlab.com/ee/user/analytics/dora_metrics
+  direction: /direction/plan/dora_metrics/
+  feature_page: /features/?stage=plan#dora_metrics
+  marketing_page: /solutions/value-stream-management/dora/
+  description: 'Monitoring and visualization of DORA metrics empower teams to make data-driven decisions and improve DevOps performance.'
+  available: 2022-10-01
+  viable: 2023-11-01
+  competitive: 2025-01-01
+  complete: 2027-01-01
+  marketing: true
+  maturity: viable
+  priority_level: high
+  dogfooding_status: Active
+
+value_stream_management:
+  name: 'Value Stream Management'
+  stage: plan
+  feature_labels:
+    - value stream analytics
+  documentation: https://docs.gitlab.com/ee/user/group/value_stream_analytics/
+  direction: /direction/plan/value_stream_management/
+  feature_page: /features/?stage=plan#value_stream_management
+  marketing_page: /solutions/value-stream-management/
+  description: 'Track key metrics throughout the software development lifecycle, assess the impact of process improvements, and drill down into roadblocks. Compare best practices across teams to improve workflow and deliver customer value faster.'
+  roi: false
+  available: 2017-01-01
+  viable: 2023-09-28
+  competitive: 2025-01-01
+  complete: 2027-01-01
+  maturity: viable
+  dogfooding_status: Active
+  new_maturity: true
+  marketing: true
+  priority_level: high
+  ux_scorecard_link: https://gitlab.com/groups/gitlab-org/-/epics/1454
+  ux_scorecard_score: C
+
+devops_reports:
+  name: 'DevOps Reports'
+  stage: plan
+  feature_labels:
+    - convdev
+    - devops score
+  documentation: https://docs.gitlab.com/ee/administration/analytics/dev_ops_reports
+  direction: /direction/plan/devops-reports/
+  feature_page: /features/?stage=plan#devops_reports
+  description: 'See how teams across your organization are collaborating on GitLab and measure DevOps efficiency.'
+  roi: false
+  available: 2017-01-01
+  viable:
+  competitive:
+  complete:
+  maturity: minimal
+  dogfooding_status: Active
+  ux_scorecard_score: '-'
+  new_maturity: true
+  marketing: true
+  priority_level: high
+
+navigation:
+  name: 'Navigation & Settings'
+  stage: manage
+  description: 'How users easily discover and configure product features.'
+  documentation:
+  direction: /direction/manage/foundations/navigation_settings/
+  marketing: false
+  roi:
+  priority_level:
+
+source_code_management:
+  name: 'Source Code Management'
+  stage: create
+  feature_labels:
+    - encoding
+    - forking
+    - lfs
+    - mirror
+    - repository
+    - 'Category:Source Code Management'
+    - 'Source Code Management::Snippets'
+  documentation: https://docs.gitlab.com/ee/user/project/repository/
+  direction: /direction/create/source_code_management/
+  feature_page: /features/?stage=create#source_code_management
+  marketing_page: /solutions/source-code-management/
+  description: 'Source code management enables teams to securely collaborate, coordinate, and share code, allowing them to deliver software faster.'
+  link: https://gitlab.com/users/sign_in
+  link_description: 'Try GitLab free'
+  roi: true
+  available: 2011-10-08
+  viable: 2012-08-24
+  competitive: 
+  complete: 
+  maturity: complete
+  dogfooding_status: Active
+  ux_scorecard_score: '-'
+  marketing: true
+  priority_level: high
+  competitors:
+    github:
+      maturity: lovable
+
+code_review_workflow:
+  name: 'Code Review Workflow'
+  stage: create
+  feature_labels:
+    - image diff
+    - diff
+    - approvals
+    - merge requests
+  documentation: https://docs.gitlab.com/ee/user/project/merge_requests/
+  direction: /direction/create/code_review_workflow/
+  feature_page: /features/?stage=create#code_review_workflow
+  description: 'Review code, discuss changes, share knowledge, and identify defects in code among distributed teams via asynchronous commenting and review. Automate, track and report code reviews, and identify workflow improvements with code review analytics.'
+  link: https://gitlab.com/users/sign_in
+  link_description: 'Sign up for GitLab.com'
+  roi: true
+  available: 2011-12-20
+  viable: 2013-08-13
+  competitive: 
+  complete: 
+  maturity: complete
+  dogfooding_status: Active
+  marketing: true
+  priority_level: high
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/441
+  ux_scorecard_score: C/D
+  body: |
+    ## Streamline code review and approvals
+
+    Enable your development team to collaborate, review and improve their code.
+
+    ### Collaborate
+
+    * Review, comment, and improve each other's code.
+    * Approval workflow enables reviewing and approving changes.
+    * Inline comments enable asynchronous review and feedback.
+  competitors:
+    github:
+      maturity: lovable
+
+wiki:
+  name: "Wiki"
+  stage: plan
+  documentation: https://docs.gitlab.com/ee/user/project/wiki/
+  direction: /direction/plan/knowledge/wiki/
+  feature_page: /features/?stage=plan#wiki
+  description: 'A built-in wiki in each project makes it easy to share and manage documentation in the same project as your code.'
+  roi: false
+  available: 2017-10-15
+  viable: 2017-10-15
+  competitive: 2024-10-22
+  complete: 2025-12-22
+  maturity: viable
+  marketing: true
+  dogfooding_status: Active
+  ux_scorecard_score: '-'
+  priority_level: low
+  competitors:
+    github:
+      maturity: lovable
+
+pages:
+  name: "Pages"
+  stage: plan
+  documentation: https://docs.gitlab.com/ee/user/project/pages/
+  direction: /direction/plan/knowledge/pages/
+  feature_page: /features/?stage=plan#pages
+  description: 'Easily manage and deploy websites using any static site generator  with GitLab.'
+  roi: false
+  available: 2017-01-01
+  viable: 2017-01-01
+  competitive: 
+  complete: 
+  maturity: competitive
+  marketing: true
+  priority_level: low
+  dogfooding_status: Active
+  dogfooding_group: All
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/412
+  ux_scorecard_score: C
+  label: 'Category:Pages'
+  competitors:
+    github:
+      maturity: complete
+      documentation: https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages
+
+gitlab_docs:
+  name: 'GitLab Documentation Site'
+  stage: manage
+  label: Category:Docs Site
+  feature_labels:
+    - gitlab docs
+  documentation: 'https://docs.gitlab.com/ee/development/documentation/site_architecture/'
+  description: 'Improve and maintain the features, style, and build process for the GitLab Documentation website.'
+  direction: /direction/manage/foundations/gitlab_docs/
+  roi: false
+  marketing: false
+  dogfooding_status: Active
+  ux_scorecard_score: '-'
+  priority_level: medium
+
+web_ide:
+  name: 'Web IDE'
+  stage: create
+  feature_labels:
+    - 'Category:Web IDE'
+    - 'Web IDE::Live Preview'
+  documentation: https://docs.gitlab.com/ee/user/project/web_ide/index.html
+  direction: /direction/create/ide/web_ide/
+  feature_page: /features/?stage=create#web_ide
+  description: 'Contribute easily right from the browser with everything you need using a full featured Integrated Development Environment (IDE). GitLab Duo, our AI-powered suite of features, is accessible in the Web IDE.'
+  roi: true
+  available: 2018-01-01
+  viable: 2019-05-22
+  competitive: 2023-11-22
+  complete: 2025-06-22
+  maturity: competitive
+  marketing: true
+  dogfooding_status: Active
+  ux_scorecard_score: '-'
+  priority_level: medium
+  competitors:
+    github:
+      maturity: lovable
+      documentation: https://docs.github.com/en/codespaces
+
+gitlab_cli:
+  name: 'GitLab CLI'
+  stage: create
+  documentation: https://docs.gitlab.com/ee/integration/glab
+  direction: /direction/create/gitlab_cli/
+  description: 'The GitLab Command Line Interface (CLI) is an unified tool that allows you to manage and interact with GitLab directly from the command line.'
+  feature_page: /features/?stage=create#gitlab_cli
+  roi: true
+  available: 2020-05-22
+  viable: 2022-07-22
+  competitive: 2024-05-22
+  complete: 2025-05-22
+  maturity: viable
+  marketing: true
+  priority_level: medium
+  dogfooding_status: Planned
+  competitors:
+    github:
+      maturity: lovable
+      description: GitHub is deeply integrated with developer tools.
+
+editor_extensions:
+  name: 'Editor Extensions'
+  stage: create
+  documentation: https://docs.gitlab.com/ee/editor_extensions/
+  direction: /direction/create/editor_extensions/
+  description: 'Editor extensions and plugins bring GitLab Duo, our AI-powered suite of features, and other GitLab functionality directly into your local developer environment.'
+  roi: true
+  available: 2023-05-17
+  viable: 2024-05-22
+  competitive: 2025-05-22
+  complete: 2026-05-22
+  maturity: minimal
+  marketing: false
+  priority_level: high
+  dogfooding_status: Active
+  competitors:
+    github:
+      maturity: lovable
+      description: GitHub is deeply integrated with developer tools.
+
+remote_development:
+  name: 'Remote Development'
+  stage: create
+  documentation: https://docs.gitlab.com/ee/user/project/remote_development/
+  direction: /direction/create/ide/remote_development/
+  feature_page: /features/?stage=create#remote_development
+  feature_labels:
+    - 'Category:Remote Development'
+  description: 'Accelerate and standardize developer workflows with remote development workspaces – secure, virtual environments with customizable libraries, dependencies, and tools for each project.'
+  roi: false
+  available: 2022-12-22
+  viable: 2024-06-22
+  competitive: 2025-09-22
+  complete: 2026-12-22
+  maturity: minimal
+  dogfooding_status: Planned
+  marketing: true
+  opportunity: Core
+
+api:
+  name: API
+  stage: manage
+  label: 'Category:API'
+  direction: /direction/manage/import_and_integrate/api/
+  documentation: https://docs.gitlab.com/ee/api/rest/index.html
+  description: 'GitLab offers a REST and GraphQL API to give customers options on how to best integrate with GitLab.'
+  roi: false
+  marketing: false
+
+integrations:
+  name: Integrations
+  stage: manage
+  label: 'Category:Integrations'
+  documentation: https://docs.gitlab.com/ee/integration/
+  direction: /direction/manage/import_and_integrate/integrations/
+  description: 'Integrations are places where the GitLab product connects to features and services from other products. These integrations seek to offer our customers a seamless experience between these products, and range from lightweight features like Slack notifications for projects, to deep and complex integrations with Atlassian JIRA that connect a wide array of functionality throughout the GitLab product.'
+  roi: false
+  marketing: true
+  maturity: viable
+  available: 2017-01-01
+  viable: 2018-01-22
+  complete:
+  lovable:
+  dogfooding_status: Active
+
+webhooks:
+  name: Webhooks
+  stage: manage
+  label: 'Category:Webhooks'
+  direction: /direction/manage/import_and_integrate/webhooks/
+  documentation: https://docs.gitlab.com/ee/user/project/integrations/webhooks.html
+  description: "Webhooks are a generic way for projects to be integrated with any other service. GitLab's Webhooks proactively send data to another service when certain events happen. These are increasingly important for external vendors, as they offer a key way to integrate with GitLab that doesn't require them building inside our codebase."
+  roi: false
+  marketing: false
+
+design_system:
+  name: Design System
+  stage: manage
+  documentation: https://design.gitlab.com
+  direction: /direction/manage/foundations/design_system/
+  description: "GitLab's design system called Pajamas. Used internally to power GitLab in order to improve user interface consistency and accessibility."
+  feature_labels:
+    - Category:Foundations
+  roi: false
+  marketing: false
+
+continuous_integration:
+  name: 'Continuous Integration (CI)'
+  label: Category:Continuous Integration
+  stage: verify
+  feature_labels:
+    - 'ci::usage'
+    - 'ci::processing'
+    - 'ci::permissions'
+    - 'ci::api-interactions'
+    - 'ci::notifications'
+    - 'ci::metrics'
+    - 'ci::merge-request'
+    - 'ci::scaling'
+    - 'CI jobs'
+    - 'CI reports'
+    - 'pipeline schedules'
+    - 'CI/CD Settings'
+  documentation: https://docs.gitlab.com/ee/ci/
+  direction: /direction/verify/continuous_integration/
+  feature_page: /features/?stage=verify#continuous_integration
+  marketing_page: /solutions/continuous-integration/
+  description: 'Streamline your software development lifecycle with continuous, automated building, testing, and deploying of iterative code changes. This ensures the early detection of integration issues, bugs, and security vulnerabilities before deploying to production.'
+  roi: true
+  available: 2017-01-01
+  viable: 2017-01-01
+  competitive: 
+  complete: 2024-06-22
+  maturity: competitive
+  marketing: true
+  ux_scorecard_link: https://gitlab.com/gitlab-org/ux-research/-/issues/330
+  ux_scorecard_score: C
+  dogfooding_status: Active
+  dogfooding_group: Development
+  competitors:
+    github:
+      maturity: lovable
+      documentation: https://docs.github.com/en/actions
+
+pipeline_composition:
+  name: 'Pipeline Composition'
+  label: Category:Pipeline Composition
+  stage: verify
+  feature_labels:
+    - 'ci::persistence'
+    - 'ci::variables'
+    - 'ci::rules'
+    - 'ci::integrations'
+    - 'ci::bridge-pipelines'
+    - 'ci::dag'
+    - 'ci::pipeline-graphs'
+  marketing_page: /solutions/continuous-integration/
+  documentation: https://docs.gitlab.com/ee/ci/
+  direction: /direction/verify/pipeline_authoring/
+  description: 'Advanced features enable you to edit/compose a highly flexible CI/CD pipeline configuration to boost efficiency across a variety of projects.'
+  roi: false
+  available: 2021-01-22
+  viable: 2021-06-22
+  competitive: 2025-11-22
+  complete: 2027-01-22
+  maturity: viable
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_group: All
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/1376
+  ux_scorecard_score: D
+  competitors:
+    github:
+      maturity: lovable
+
+secrets_management:
+  name: 'Secrets Management'
+  stage: verify
+  feature_labels:
+    - 'CI variables'
+    - 'CI job token'
+    - 'external authentication'
+  description: 'Secure and protect access to secrets, such as API keys and passwords, to ensure that sensitive data is protected throughout your development process.'
+  documentation: https://docs.gitlab.com/ee/ci/variables/
+  direction: /direction/verify/secrets_management/
+  feature_page: /features/?stage=verify#secrets_management
+  roi: false
+  available: 2019-12-22
+  viable: 2025-01-30
+  competitive:
+  complete:
+  maturity: minimal
+  new_maturity: true
+  marketing: true
+  dogfooding_status: Active
+  dogfooding_issue: 'https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Dogfooding&label_name%5B%5D=Category%3ASecrets%20Management&first_page_size=20'
+  dogfooding_group: Infrastructure
+  competitors:
+    github:
+      maturity: viable
+      documentation: https://docs.github.com/en/actions/security-guides/encrypted-secrets
+
+runner:
+  name: 'GitLab Runner Core'
+  label: 'Category:Runner Core'
+  documentation: https://docs.gitlab.com/runner/
+  direction: /direction/verify/runner_core/
+  stage: verify
+  description: 'GitLab Runner is an application to run the GitLab CI/CD jobs in a pipeline.'
+  roi: false
+  available: 2017-01-01
+  viable: 2017-01-01
+  competitive: 
+  complete: 
+  maturity: viable
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_group: All
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/600
+  ux_scorecard_score: D
+  competitors:
+    github:
+      maturity: lovable
+
+hosted_runners:
+  name: 'GitLab Hosted Runners'
+  label: 'Category:Hosted Runners'
+  documentation: https://docs.gitlab.com/ee/ci/runners/
+  direction: /direction/verify/runner_saas/
+  stage: verify
+  feature_labels: 
+    - 'CI minutes'
+  description: 'GitLab hosted Runners are managed by GitLab and can be used to run CI/CD jobs on GitLab.com or GitLab Dedicated.'
+  roi: true
+  marketing: false
+  available: 2017-01-01
+  viable: 2017-01-01
+  competitive: 2024-01-22
+  complete: 2024-05-22
+  maturity: viable
+  dogfooding_status: Active
+  dogfooding_group: All
+  ux_scorecard_link:
+  ux_scorecard_score:
+  competitors:
+    github:
+      maturity: complete
+    circleci:
+      maturity: complete
+
+fleet_visibility:
+  name: 'Fleet Visibility'
+  label: 'Category:Fleet Visibility'
+  documentation: https://docs.gitlab.com/ee/administration/admin_area.html#administering-runners
+  direction: /direction/verify/fleet_visibility/
+  stage: verify
+  description: 'Evaluate the status and performance of your runner fleet.'
+  roi: false
+  available: 2017-01-01
+  viable: 2017-01-01
+  competitive: 
+  complete: 2024-08-22
+  maturity: viable
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_group: All
+  ux_scorecard_link:
+  ux_scorecard_score:
+  competitors:
+    github:
+      maturity: viable
+      documentation: https://docs.github.com/en/actions/hosting-your-own-runners
+
+code_testing:
+  name: 'Code Testing and Coverage'
+  label: Category:Code Testing and Coverage
+  documentation: https://docs.gitlab.com/ee/ci/testing
+  direction: /direction/verify/code_testing/
+  feature_page: /features/?stage=verify#code_testing
+  stage: verify
+  feature_labels:
+    - 'testing::code testing'
+    - 'testing::coverage'
+    - 'testing::accessibility'
+    - 'testing::browser performance'
+    - 'testing::load performance'
+  description: 'Code testing and coverage are important parts of a Continuous Integration framework, ensuring that source code is validated by test suites and individual pipeline components perform as expected.'
+  roi: false
+  available: 2017-01-01
+  viable: 2021-01-12
+  competitive: 2024-07-22
+  complete: 2024-11-18
+  maturity: viable
+  marketing: true
+  dogfooding_status: Active
+  dogfooding_group: Quality
+
+build_artifacts:
+  name: 'Build Artifacts'
+  label: Category:Build Artifacts
+  stage: verify
+  documentation: https://docs.gitlab.com/ee/ci/
+  direction: /direction/verify/build_artifacts/
+  description: 'Build Artifacts refer to files generated during a build process, typically containing metadata such as test results, security scans, and more. They can be utilized for reports within GitLab or published to GitLab Pages or other platforms for review.'
+  roi: true
+  available: 2021-04-01
+  viable: 2025-07-01
+  competitive: 2026-06-01
+  complete: 2028-12-01
+  maturity: minimal
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_group: Development
+
+merge_trains:
+  name: 'Merge Trains'
+  label: Category:Merge Trains
+  documentation: https://docs.gitlab.com/ee/ci/pipelines/merge_trains.html
+  direction: /direction/verify/merge_trains/
+  feature_page: /features/?stage=verify#merge_trains
+  stage: verify
+  description: 'Coordinate frequent merge requests and avoid merge conflicts with Merge Trains, preventing code commits from breaking default and main branches.'
+  roi: true
+  available: 2019-04-22
+  viable: 2019-07-22
+  competitive: 2024-07-22
+  complete: 2026-07-22
+  maturity: viable
+  marketing: true
+  dogfooding_status: Active
+  dogfooding_issue: https://gitlab.com/gitlab-org/quality/team-tasks/-/issues/195#known-issues-improvements
+  dogfooding_group: Quality
+
+review_apps:
+  name: 'Review Apps'
+  stage: verify
+  feature_labels:
+    - 'testing::review apps'
+    - 'testing::visual review tool'
+    - 'testing::usability'
+  documentation: https://docs.gitlab.com/ee/ci/review_apps/
+  direction: /direction/verify/review_apps/
+  feature_page: /features/?stage=verify#review_apps
+  description: 'Gain access to a live instance of your application for every commit, allowing you and stakeholders to ensure thorough validation and collaboration before changes are merged into the main codebase.'
+  roi: true
+  available: 2017-01-01
+  viable: 2017-01-01
+  competitive: 
+  complete: 
+  maturity: competitive
+  marketing: true
+  priority_level: low
+  dogfooding_status: Active
+  dogfooding_group: Development, All
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab/-/issues/352789
+  ux_scorecard_score: B
+  label: "Category:Review Apps"
+
+package_registry:
+  name: 'Package Registry'
+  stage: package
+  documentation: https://docs.gitlab.com/ee/user/packages/package_registry/
+  direction: /direction/package/#package-registry
+  feature_page: /features/?stage=package#package_registry
+  description: |
+    Use GitLab as a private or public registry for a variety of supported package managers. You can publish and share packages, which can be consumed as a dependency in downstream projects.
+  roi: true
+  available: 2018-01-01
+  viable: 2020-01-22
+  competitive: 2024-08-22
+  complete: 2025-10-22
+  maturity: viable
+  marketing: true
+  dogfooding_status: Planned
+  dogfooding_issue: https://gitlab.com/gitlab-org/gitlab/-/issues/334454
+  dogfooding_group: Development, Distribution:Build, Distribution:Deploy
+  competitors:
+    github:
+      maturity: lovable
+      documentation: https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages
+
+container_registry:
+  name: 'Container Registry'
+  stage: package
+  documentation: https://docs.gitlab.com/ee/user/packages/container_registry/
+  direction: /direction/package/#container-registry
+  feature_page: /features/?stage=package#container_registry
+  description: |
+    An integrated container registry to store container images for each GitLab project. Creating, pushing, and retrieving images works out of the box with GitLab CI/CD.
+  roi: true
+  available: 2017-01-01
+  viable: 2017-01-01
+  competitive: 2024-12-22
+  complete: 2025-11-22
+  maturity: viable
+  marketing: true
+  dogfooding_status: Active
+  dogfooding_group: Development, Distribution:Build, Distribution:Deploy
+  competitors:
+    github:
+      maturity: lovable
+      documentation: https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages
+
+helm_chart_registry:
+  name: 'Helm Chart Registry'
+  stage: package
+  documentation: https://docs.gitlab.com/ee/user/packages/helm_repository/#helm-charts-in-the-package-registry
+  direction: /direction/package/#helm-chart-registry
+  feature_page: /features/?stage=package#helm_chart_registry
+  description: |
+    An integrated Helm chart registry to store Helm charts for each GitLab project. Building, uploading, and installing Helm charts works out of the box with GitLab. Helm is the package manager for Kubernetes.
+  roi: false
+  available: 2020-01-22
+  viable: 2021-07-22
+  competitive: 2024-06-22
+  complete: 2025-07-22
+  maturity: viable
+  marketing: true
+  dogfooding_status: Planned
+  dogfooding_issue: https://gitlab.com/gitlab-org/gitlab/-/issues/334452
+  dogfooding_group: Distribution:Build, Distribution:Deploy
+
+dependency_proxy:
+  name: 'Dependency Proxy'
+  stage: package
+  documentation: https://docs.gitlab.com/ee/user/packages/dependency_proxy/
+  direction: /direction/package/#dependency-proxy
+  feature_page: /features/?stage=package#dependency_proxy
+  description: |
+     GitLab Dependency Proxy is a local proxy you can use for your frequently-accessed upstream images. In the case of CI/CD, the Dependency Proxy receives a request and returns the upstream image from a registry, acting as a pull-through cache.
+  roi: false
+  available: 2019-05-22
+  viable: 2020-02-22
+  competitive: 2024-12-22
+  complete: 2025-11-22
+  maturity: viable
+  marketing: true
+  dogfooding_status: Active
+  dogfooding_issue: https://gitlab.com/gitlab-org/gitlab/-/issues/334454
+  dogfooding_group: Development, Quality, Distribution:Build, Distribution:Deploy
+
+dependency_firewall:
+  name: 'Dependency Firewall'
+  stage: package
+  direction: /direction/package/#dependency-firewall
+  description: |
+    GitLab ensures that the dependencies stored in your package registries conform to your corporate compliance guidelines. This means you can prevent your organization from using dependencies that are insecure or out of policy.
+  roi: false
+  available: 2024-09-22
+  viable: 2024-12-22
+  competitive:
+  complete:
+  maturity: planned
+  marketing: true
+  dogfooding_status: Planned
+  dogfooding_group: Not Applicable (Planned)
+
+static_application_security_testing:
+  name: 'SAST'
+  stage: secure
+  label: 'Category:SAST'
+  documentation: https://docs.gitlab.com/ee/user/application_security/sast/
+  direction: /direction/secure/static-analysis/sast/
+  feature_page: /features/?stage=secure#static_application_security_testing
+  description: 'Scans your application source code and binaries to spot potential vulnerabilities before deployment. SAST supports scanning a variety of different programming languages and automatically chooses the right analyzer even if your project uses more than one language. Vulnerabilities, additional data, and solutions are shown in-line with every merge request. Scanner results are collected and presented as a single report.'
+  roi: true
+  available: 2018-01-01
+  viable: 2019-03-22
+  competitive: 
+  complete: 2024-11-18
+  maturity: viable
+  new_maturity: true
+  marketing: true
+  priority_level: high
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/400
+  ux_scorecard_score: D
+  dogfooding_status: Active
+  dogfooding_issue: https://about.gitlab.com/handbook/security/security-engineering/application-security/#gitlab-secure-tools-coverage
+  competitors:
+    github:
+      maturity: complete
+      documentation: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning
+      description: |
+        GitHub experts, security researchers, and community contributors write and maintain the default
+        CodeQL queries used for code scanning. The queries are regularly updated to improve analysis and
+        reduce any false positive results. The queries are open source, so you can view and contribute to the
+        queries in the [`github/codeql`](https://github.com/github/codeql) repository. For more information,
+        see [CodeQL](https://codeql.github.com) on the CodeQL website.
+
+        You can also write your own queries. For more information, see
+        ["About CodeQL queries"](https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/)
+        in the CodeQL documentation.
+
+secret_detection:
+  name: 'Secret Detection'
+  stage: secure
+  label: 'Category:Secret Detection'
+  documentation: https://docs.gitlab.com/ee/user/application_security/secret_detection/
+  direction: /direction/secure/secret-detection/secret-detection/
+  feature_page: /features/?stage=secure#secret_detection
+  description: 'Scans your repository to help prevent your secrets from being exposed. Secret Detection scanning works on all text files, regardless of the language or framework used. Code pushed to a remote Git branch can be rejected if a secret is detected.'
+  roi: false
+  available: 2019-03-22
+  viable: 2020-06-22
+  competitive: 2024-10-22
+  complete: 2025-10-22
+  maturity: viable
+  new_maturity: true
+  marketing: true
+  priority_level: medium
+  dogfooding_status: Active
+  dogfooding_issue: https://about.gitlab.com/handbook/security/security-engineering/application-security/#gitlab-secure-tools-coverage
+  competitors:
+    github:
+      maturity: lovable
+      documentation: https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning
+      description: |
+        GitHub will scan your entire Git history on all branches present in your GitHub repository for any secrets.
+        Service providers can partner with GitHub to provide their secret formats for scanning.
+
+        When secret scanning detects a potential secret, we notify the service provider who issued the secret.
+        The service provider validates the string and then decides whether they should revoke the secret,
+        issue a new secret, or contact you directly. Their action will depend on the associated risks to you or them.
+
+code_quality:
+  name: 'Code Quality'
+  stage: secure
+  label: 'Category:Code Quality'
+  documentation: https://docs.gitlab.com/ee/ci/testing/code_quality
+  feature_page: /features/?stage=secure#code_quality
+  direction: /direction/secure/secret-detection/code_quality/
+  description: "Analyzes your source code quality and complexity. This helps keep your project’s code simple, readable, and easier to maintain."
+  roi: false
+  available: 2017-01-01
+  viable: 
+  competitive:
+  complete:
+  maturity: minimal
+  marketing: true
+  dogfooding_status: Active
+  dogfooding_issue: https://about.gitlab.com/handbook/security/security-engineering/application-security/#gitlab-secure-tools-coverage
+
+dynamic_application_security_testing:
+  name: 'DAST'
+  stage: secure
+  documentation: https://docs.gitlab.com/ee/user/application_security/dast/
+  feature_page: /features/?stage=secure#dynamic_application_security_testing
+  direction: /direction/secure/dynamic-analysis/dast/
+  description: "Runs automated penetration tests to find vulnerabilities in web applications and APIs as they are running. DAST can run live attacks against a Review App, an externally deployed application, or an active API. Scans can be run for every merge request, on a schedule, or even on-demand. DAST supports user inputted HTTP credentials to test private areas of your application. Vulnerabilities, additional data, and solutions are shown in-line with every merge request. Scanner results are presented as a single report."
+  roi: true
+  available: 2018-01-01
+  viable: 2019-04-22
+  competitive: 
+  complete: 2024-11-18
+  maturity: viable
+  marketing: true
+  priority_level: high
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/1612
+  ux_scorecard_score: C
+  dogfooding_status: Active
+  dogfooding_issue: https://gitlab.com/gitlab-org/gitlab/-/issues/341543
+
+api_security:
+  name: 'API Security'
+  stage: secure
+  direction: /direction/secure/dynamic-analysis/api-security/
+  documentation: https://docs.gitlab.com/ee/user/application_security/dast_api/
+  feature_page: /features/?stage=secure#api_security
+  description: 'Secures and protects web Application Programming Interfaces  from unauthorized access, misuse, and attacks. Tests for known vulnerabilities by performing penetration testing of APIs with DAST. Finds unknown vulnerabilities by performing Fuzz Testing of web API operation parameters.Users can provide credentials to test authenticated APIs. Vulnerabilities, additional data, and solutions are shown in-line with every merge request.. Scanner results are collected and presented as a single report.'
+  roi: false
+  available: 2021-06-22
+  viable: 2021-06-22
+  competitive: 
+  complete: 2024-11-22
+  maturity: viable
+  new_maturity: true
+  marketing: true
+  priority_level: high
+  acquisition_one:
+    - name: 'Peach Tech'
+    - start_date: 2020-06-01
+    - end_date: NULL
+  dogfooding_status: Not Active
+
+fuzz_testing:
+  name: 'Coverage-guided Fuzz Testing'
+  stage: secure
+  label: 'category::fuzz testing'
+  direction: /direction/secure/dynamic-analysis/fuzz-testing/
+  documentation: https://docs.gitlab.com/ee/user/application_security/coverage_fuzzing/
+  description: 'Sends random inputs to an instrumented version of your application in an effort to cause unexpected behavior in order to identify a bug that needs to be addressed. Helps you discover bugs and potential security issues that other QA processes may miss.'
+  feature_page: /features/?stage=secure#fuzz_testing
+  roi: false
+  available: 2020-08-02
+  viable: 2021-01-22
+  competitive:
+  complete: 2024-11-22
+  maturity: viable
+  new_maturity: true
+  marketing: true
+  priority_level: high
+  acquisition_one:
+    - name: 'Peach Tech'
+    - start_date: 2020-06-01
+    - end_date: NULL
+  acquisition_two:
+    - name: 'Fuzzit'
+    - start_date: 2020-05-14
+    - end_date: NULL
+  dogfooding_status: N/A
+
+software_composition_analysis:
+  # Dependency Scanning
+  name: 'Software Composition Analysis'
+  stage: secure
+  label: 'Category:Software Composition Analysis'
+  documentation: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/
+  direction: /direction/secure/composition-analysis/software-composition-analysis
+  description: 'Analyzes external dependencies within your application for known vulnerabilities on each CI/CD code commit. Vulnerabilities, additional data, and solutions are shown in-line with every merge request. Scanner results are collected and presented as a single report. Upon code commit, project dependencies are searched for approved and denied licenses defined by per project custom policies. Software licenses are identified if they are not within policy and are shown in-line for every merge request for immediate resolution.'
+  feature_page: /features/?stage=secure#software_composition_analysis
+  roi: true
+  available: 2018-01-01
+  viable: 2019-04-22
+  competitive: 
+  complete: 2025-10-22
+  maturity: viable
+  marketing: true
+  priority_level: high
+  ux_scorecard_link: https://gitlab.com/groups/gitlab-org/-/epics/2396
+  ux_scorecard_score: F
+  dogfooding_status: Active
+  dogfooding_issue: https://about.gitlab.com/handbook/security/security-engineering/application-security/#gitlab-secure-tools-coverage
+
+container_scanning:
+  name: 'Container Scanning'
+  stage: secure
+  documentation: https://docs.gitlab.com/ee/user/application_security/container_scanning/
+  direction: /direction/secure/composition-analysis/container-scanning/
+  description: 'Scans your container images for known vulnerabilities within the application environment. Image contents are analyzed against public vulnerability databases.Security findings, additional data, and solutions reported in-line with every merge request along with additional data including solutions. Results are presented as a single report. Container Scanning is considered part of Software Composition Analysis.'
+  feature_page: /features/?stage=secure#container_scanning
+  roi: true
+  available: 2018-01-01
+  viable: 2019-05-22
+  competitive: 
+  complete: 2027-05-18
+  maturity: viable
+  marketing: true
+  priority_level: medium
+  dogfooding_status: Active
+  dogfooding_issue: https://handbook.gitlab.com/handbook/security/product-security/application-security/#gitlab-secure-tools-coverage
+
+advisory_database:
+  name: GitLab Advisory Database
+  stage: secure
+  direction: /direction/secure/vulnerability-research/advisory-database/
+  description: 'The GitLab Advisory Database serves as a repository for security advisories related to software dependencies. GitLab integrates the advisory database with its proprietary and open-source application security scanning tools. In order to maintain the efficacy of those scanners, we strive to keep their underlying vulnerability databases up-to-date.'
+  roi: false
+  available:
+  viable:
+  competitive:
+  complete:
+  maturity:
+  marketing: false
+  priority_level: high
+  dogfooding_status: Active
+  dogfooding_issue: https://about.gitlab.com/handbook/security/security-engineering/application-security/#gitlab-secure-tools-coverage
+
+attack_emulation:
+  name: Attack Emulation
+  stage: secure
+  description: 'Continuously assess your applications and services are not vulnerable to security threats through automated, real-world emulated scenarios to identify weaknesses in your attack surface'
+  direction:
+  roi: false
+  available: 
+  viable:
+  competitive:
+  complete:
+  maturity: 
+  marketing: false
+  priority_level: low
+  dogfooding_status: N/A
+
+audit_events:
+  name: 'Audit Events'
+  stage: govern
+  documentation: https://docs.gitlab.com/ee/administration/audit_events.html
+  direction: /direction/govern/compliance/audit-events/
+  description: 'Audit Events track important actions within GitLab along with who performed the actions and the time in which they occurred. These events can be used in a security audit to assess risk, strengthen security measures, respond to incidents, and adhere to compliance.'
+  feature_page: /features/?stage=govern#audit_events
+  roi: false
+  available: 2017-01-01
+  viable: 2018-11-22
+  competitive: 2024-01-22
+  complete:
+  maturity: viable
+  dogfooding_status: Active
+  ux_scorecard_score: '-'
+  marketing: true
+  priority_level: high
+  competitors:
+    github:
+      maturity: complete
+      documentation: https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization
+
+compliance_management:
+  name: 'Compliance Management'
+  stage: govern
+  documentation: https://docs.gitlab.com/ee/administration/compliance.html
+  direction: /direction/govern/compliance/compliance-management/
+  description: 'Compliance Management provides customers with the tools necessary to ensure and manage their compliance programs. Compliance Workflow Automation is provided to enforce custom pipelines to run on projects which have specific compliance needs. For compliance oversight, the Compliance Center provides a central location for compliance teams to manage their compliance standards adherence reporting, violations reporting, and compliance frameworks for their group.'
+  feature_page: /features/?stage=govern#compliance_management
+  roi: false
+  available: 2020-01-22
+  viable: 2022-07-22
+  competitive: 
+  complete:
+  maturity: viable
+  dogfooding_status: Active
+  ux_scorecard_score: '-'
+  new_maturity: true
+  marketing: true
+  priority_level: high
+  competitors:
+    github:
+      maturity: viable
+      documentation: https://docs.github.com/en/code-security/getting-started/securing-your-organization
+
+security_policy_management:
+  name: 'Security Policy Management'
+  stage: govern
+  direction: /direction/govern/security_policies/security_policy_management/
+  documentation: https://docs.gitlab.com/ee/user/application_security/policies/
+  description: "Unified security policy management provides security and compliance teams with a way to enforce controls across their organization for all of GitLab's scanners and security technologies. Policies can be used to ensure security scanners are enforced in development team pipelines with proper configuration, all scan jobs execute without any changes or alterations, and proper approvals are provided on merge requests based on results from those findings."
+  feature_page: /features/?stage=govern#security_policy_management
+  roi: false
+  available: 2021-02-22
+  viable: 2024-05-22
+  competitive: 2024-10-22
+  complete: 2025-10-22
+  maturity: minimal
+  marketing: true
+  priority_level: medium
+  dogfooding_status: N/A
+
+vulnerability_management:
+  name: 'Vulnerability Management'
+  stage: govern
+  label: 'Category:Vulnerability Management'
+  description: 'Vulnerability Management enables collaboration between security teams by providing a uniform interface to assess the security posture of their applications. Security teams can view, triage, trend, track, and resolve vulnerabilities detected by the various GitLab scanners.'
+  documentation: https://docs.gitlab.com/ee/user/application_security/security_dashboard/
+  direction: /direction/govern/threat_insights/vulnerability_management/
+  feature_page: /features/?stage=govern#vulnerability_management
+  roi: false
+  available: 2020-05-22
+  viable: 2020-12-08
+  competitive: 2023-12-22
+  complete: 2024-07-22
+  maturity: viable
+  new_maturity: true
+  marketing: true
+  priority_level: high
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/401
+  ux_scorecard_score: D
+  dogfooding_status: Active
+  dogfooding_issue: https://about.gitlab.com/handbook/security/security-engineering/application-security/#gitlab-secure-tools-coverage
+  feature_labels:
+    - security dashboard
+    - security reports
+    - security reports integration
+    - vulnerability interaction
+  competitors:
+    github:
+      maturity: complete
+      documentation: https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies
+
+dependency_management:
+  name: 'Dependency Management'
+  stage: govern
+  label: 'Category:Dependency Management'
+  description: 'Dependency Management allows users to review project/group dependencies and key details about those dependencies, including their vulnerabilities, licenses, and packager.'
+  documentation: https://docs.gitlab.com/ee/user/application_security/dependency_list/
+  direction: /direction/govern/threat_insights/dependency_management/
+  feature_page: /features/?stage=govern#dependency_management
+  roi: false
+  available: 2019-06-22
+  viable: 2022-09-01
+  competitive: 2024-10-17
+  complete: 2025-10-16
+  maturity: viable
+  new_maturity: true
+  marketing: true
+  priority_level: high
+  feature_labels:
+    - dependency list
+  dogfooding_status: Active
+
+sbom:
+  # TODO: Should be named Software Bill of Materials
+  name: 'Software Supply Chain Security'
+  stage: govern
+  description: "GitLab allows you to generate a software bill of materials (SBOM) in an automated manner to identify your projects’ dependencies along with key details about those dependencies including discovered vulnerabilities."
+  documentation: https://about.gitlab.com/solutions/supply-chain/
+  direction: /direction/supply-chain/
+  feature_page: /features/?stage=govern#dependency_management
+  marketing_page: /solutions/supply-chain/
+  roi: false
+  available: 2019-06-22
+  viable: 2022-09-01
+  competitive: 2024-10-17
+  complete: 2025-10-16
+  maturity: viable
+  new_maturity: true
+  marketing: true
+  priority_level: high
+  dogfooding_status: Active
+  feature_labels:
+    - sbom feature
+
+insider_threat:
+  name: 'Insider Threat'
+  stage: govern
+  label: 'Category:Insider Threat'
+  feature_labels:
+    - 'Arkose'
+  documentation:
+  direction: /direction/govern/anti-abuse/insider_threat/
+  description: 'Insider Threat identifies attacks and high risk behaviors by correlating different data sources and observing user behavioral patterns'
+  maturity: minimal
+  available: 2019-06-22
+  viable: 2023-03-22
+  competitive: 2023-12-22
+  complete: 2024-12-22
+  marketing: false
+  dogfooding_status: N/A
+
+instance_resiliency:
+  name: 'Instance Resiliency'
+  label: 'Category:Instance Resiliency'
+  stage: govern
+  feature_labels:
+    - 'pipeline abuse prevention'
+  documentation: https://docs.gitlab.com/ee/administration/external_pipeline_validation.html
+  direction: /direction/govern/anti-abuse/instance_resiliency/
+  description: 'Instance Resiliency provides tools to prevent malicious activity from occurring within GitLab Instances. These tools include external pipeline validation allowing you to use an external service to validate a pipeline before it is created.'
+  roi: true
+  available: 2021-06-01
+  viable: 2022-12-01
+  competitive: 2023-04-01
+  complete: 2025-12-01
+  maturity: minimal
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_group: Development, Trust and Safety, Infrastructure
+
+continuous_delivery:
+  name: 'Continuous Delivery'
+  stage: deploy
+  documentation: https://docs.gitlab.com/ee/ci/
+  direction: /direction/delivery/continuous_delivery/
+  feature_page: /features/?stage=deploy#continuous_delivery
+  marketing_page: /solutions/continuous-integration/
+  description: 'Ensure compliant application delivery pipelines with deployment approvals. Deploy on schedule with scheduled pipelines and deploy freezes. Track deployments with environments and provide the necessary reports through audit trails.'
+  roi: true
+  available: 2017-01-01
+  viable: 2017-01-01
+  competitive: 
+  complete: 2024-01-22
+  maturity: competitive
+  marketing: true
+  priority_level: medium
+  dogfooding_status: Active
+  dogfooding_group: Development, All
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/1664
+  ux_scorecard_score:
+  label: 'Category:Continuous Delivery'
+  feature_labels:
+    - 'deploy freeze'
+    - 'deploy keys'
+  competitors:
+    github:
+      maturity: complete
+      documentation: https://docs.github.com/en/actions/deployment/about-deployments/about-continuous-deployment
+
+feature_flags:
+  name: 'Feature Flags'
+  stage: deploy
+  documentation: https://docs.gitlab.com/ee/operations/feature_flags.html
+  direction: /direction/delivery/feature_flags/
+  feature_page: /features/?stage=deploy#feature_flags
+  description: 'Reduce deployment risk with a progressive rollout strategy that includes feature flags — enabling teams to toggle feature availability, test features in small batches, and separate deployment from customer launch.'
+  roi: false
+  available: 2018-10-22
+  viable: 2019-03-22
+  competitive: 2024-01-22
+  complete: 2025-01-22
+  maturity: viable
+  marketing: true
+  priority_level: medium
+  dogfooding_status: Active
+  dogfooding_group: Development
+  ux_scorecard_link:
+  ux_scorecard_score:
+  label: 'Category:Feature Flags'
+
+release_evidence:
+  name: "Release Evidence"
+  stage: govern
+  direction: /direction/release/release_evidence/
+  documentation: https://docs.gitlab.com/ee/user/project/releases/release_evidence
+  description: "Release Evidence provides assurances and evidence collection that are necessary for you to trust the changes you're delivering. When a release is created, GitLab takes a snapshot of relevant release data as evidence that it occurred."
+  feature_page: /features/?stage=govern#release_evidence
+  roi: false
+  available: 2020-01-22
+  viable: 2024-01-22
+  competitive: 2025-01-22
+  complete: 2025-06-22
+  maturity: minimal
+  marketing: true
+  dogfooding_status: Active
+  dogfooding_group: Delivery
+
+release_orchestration:
+  name: 'Release Orchestration'
+  stage: deploy
+  direction: /direction/delivery/release_orchestration/
+  documentation: https://docs.gitlab.com/ee/user/project/releases/
+  feature_page: /features/?stage=deploy#release_orchestration
+  description: 'Coordinate complex releases across multiple projects in an efficient way. Leverage scheduled delivery, blackout periods, parallelization and sequencing, and support for integrating manual processes to release software faster.'
+  roi: false
+  available: 2017-01-01
+  viable: 2020-03-22
+  competitive: 2024-09-22
+  complete: 2025-01-22
+  maturity: viable
+  new_maturity: true
+  marketing: true
+  priority_level: high
+  dogfooding_status: Active
+  dogfooding_group: Delivery
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/1670
+  ux_scorecard_score: D
+  label: 'Category:Release Orchestration'
+
+environment_management:
+  name: 'Environment Management'
+  stage: deploy
+  documentation: https://docs.gitlab.com/ee/ci/environments/
+  direction: /direction/delivery/environment_management/
+  feature_page: /features/?stage=deploy#environment_management
+  description: 'Environments are at the center of DevSecOps, bringing the results of application development in front of the users. They provide traceability of deployments, visualisation of workload states, and support advanced rollout strategies, feature flag management, and when necessary rollbacks.'
+  roi: true
+  available: 2017-01-01
+  viable: 2023-02-22
+  competitive: 2024-02-22
+  complete:
+  maturity: viable
+  marketing: true
+  priority_level: high
+  dogfooding_status: Active
+  dogfooding_group: All
+  competitors:
+    github:
+      maturity: viable
+      documentation: https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment
+
+auto_devops:
+  name: 'Auto DevOps'
+  stage: deploy
+  documentation: https://docs.gitlab.com/ee/topics/autodevops/
+  direction: /direction/delivery/auto_devops/
+  feature_page: /features/?stage=deploy#auto_devops
+  description: 'Automatically discover, build, test, and scan source code, and deploy and monitor built applications using an opinionated but highly customizable set of CI/CD templates and integrations. Enable teams to focus on writing business code and better collaboration while delivering software faster.'
+  roi: true
+  available: 2017-09-22
+  viable: 2019-12-22
+  competitive:
+  complete: 2024-03-22
+  maturity: viable
+  marketing: true
+  priority_level: medium
+  dogfooding_status: Active
+  dogfooding_issue: 'https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&state=opened&label_name[]=group%3A%3Aconfigure&label_name[]=Category%3AAuto%20DevOps&label_name[]=Dogfooding'
+  dogfooding_group: Security, Marketing
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/525
+  ux_scorecard_score: C
+
+deployment_management:
+  name: 'Deployment Management'
+  stage: deploy
+  marketing_page: /solutions/kubernetes/
+  documentation: https://docs.gitlab.com/ee/topics/release_your_application.html
+  direction: /direction/delivery/
+  feature_page: /features/?stage=deploy#deployment_management
+  description: 'Deploying applications from testing environments to multi-region production servers is a core requirement of DevSecOps. Deployments should be easy to codify for platform engineers and simple to interact with for engineers and release managers. Moreover, they should follow company requirements in terms of compliance and security. Deployment management supports multi-cloud, cloud-native, and legacy infrastructures and unifies the platform experience by integrating tools and frameworks, such as Flux for GitOps.'
+  roi: true
+  available: 2017-05-22
+  viable: 2018-04-22
+  competitive: 2023-12-22
+  complete:
+  maturity: viable
+  marketing: true
+  priority_level: high
+  dogfooding_status: Active
+  dogfooding_issue: "https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&state=opened&label_name[]=group%3A%3Aconfigure&label_name[]=Dogfooding&label_name[]=Category%3AKubernetes%20Management"
+  dogfooding_group: Delivery
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/487
+  ux_scorecard_score: C
+  label: 'Category:Deployment Management'
+
+infrastructure_as_code:
+  name: 'Infrastructure as Code'
+  stage: deploy
+  documentation: https://docs.gitlab.com/ee/user/infrastructure/iac/index.html
+  direction: /direction/delivery/infrastructure_as_code/
+  feature_page: /features/?stage=deploy#infrastructure_as_code
+  description: 'Automate the provisioning of infrastructure resources through Infrastructure-as-Code, use Terraform/OpenTofu with zero-configuration from CI/CD pipelines, and apply GitOps best practices to deliver software faster.'
+  roi: false
+  available: 2019-09-01
+  viable: 2021-01-22
+  competitive: 2023-12-22
+  complete: 2024-09-22
+  maturity: viable
+  marketing: true
+  priority_level: high
+  dogfooding_status: Active
+  dogfooding_issue: https://gitlab.com/gitlab-com/gl-infra/infrastructure/-/issues/10179
+  dogfooding_group: Infrastructure, Development, Security, Marketing, Training
+
+incident_management:
+  name: 'Incident Management'
+  stage: monitor
+  direction: /direction/service_management/incident_management/
+  documentation: https://docs.gitlab.com/ee/operations/incident_management/
+  feature_page: /features/?stage=monitor#incident_management
+  description: 'Streamline incident management and simplify resolution tracking in GitLab. Define error budgets, service level objectives (SLOs) and effortlessly manage alerts from multiple sources.'
+  roi: false
+  available: 2019-05-22
+  viable: 2019-10-22
+  competitive:
+  complete:
+  maturity: viable
+  marketing: true
+  priority_level: high
+  dogfooding_status: Active
+  dogfooding_issue: https://gitlab.com/gitlab-org/gitlab/-/issues/333981
+  dogfooding_group: Infrastructure
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab/-/issues/11713
+  ux_scorecard_score: C
+  label: 'Category:Incident Management'
+
+on_call_schedule_management:
+  name: 'On-call Schedule Management'
+  stage: monitor
+  description: 'Efficiently manage, rotate, and track on-call responsibilities, define escalation policies, and take advantage of different notifications and paging options.'
+  direction: /direction/service_management/on-call_schedule_management/
+  documentation: https://docs.gitlab.com/ee/operations/incident_management/oncall_schedules.html
+  feature_page: /features/?stage=monitor#on_call_schedule_management
+  roi: false
+  available: 2021-04-22
+  viable:
+  competitive:
+  complete:
+  maturity: minimal
+  marketing: true
+  priority_level: high
+  dogfooding_status: Planned
+  dogfooding_issue: https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/322
+  dogfooding_group: Infrastructure
+  ux_scorecard_link:
+  ux_scorecard_score:
+  label: 'Category:On-call Schedule Management'
+
+service_desk:
+  name: 'Service Desk'
+  label: Category:Service Desk
+  stage: monitor
+  documentation: https://docs.gitlab.com/ee/user/project/service_desk/
+  direction: /direction/service_management/service_desk/
+  feature_page: /features/?stage=monitor#service_desk
+  description: 'Empower teams with service desk capabilities and integrated issue tracking within the DevSecOps workflow to enable a seamless and efficient feedback loop.'
+  roi: false
+  available: 2017-01-01
+  viable: 2017-01-01
+  competitive: 2024-01-31
+  complete:
+  feature_labels:
+    - service desk issues
+    - customer relationships management
+  maturity: viable
+  marketing: true
+  priority_level: medium
+  ux_scorecard_link:
+  ux_scorecard_score:
+  dogfooding_status: Active
+  dogfooding_issue: N/A
+
+product_analytics_visualization:
+  name: 'Product Analytics Visualization'
+  stage: monitor
+  documentation: https://docs.gitlab.com/ee/user/product_analytics/
+  direction: /direction/analytics/product-analytics/
+  roi: false
+  available: 2024-01-01
+  viable: 2024-10-01
+  competitive: 2026-10-01
+  complete: 2027-10-01
+  maturity: planned
+  marketing: true
+  priority_level: medium
+  ux_scorecard_link:
+  ux_scorecard_score:
+  dogfooding_issue:
+  dogfooding_status: Planned
+  label: 'Category:Product Analytics Visualization'
+
+product_analytics_data_management:
+  name: 'Product Analytics Data Management'
+  stage: monitor
+  documentation: https://docs.gitlab.com/ee/user/product_analytics/
+  direction: /direction/analytics/product-analytics/
+  roi: false
+  available: 2024-01-01
+  viable: 2024-10-01
+  competitive: 2026-10-01
+  complete: 2027-10-01
+  maturity: planned
+  marketing: false
+  priority_level: medium
+  ux_scorecard_link:
+  ux_scorecard_score:
+  dogfooding_issue:
+  dogfooding_status: Planned
+  label: 'Category:Product Analytics Data Management'
+
+service_ping:
+  name: 'Service Ping'
+  stage: monitor
+  direction:
+  description: 'Formerly Usage Ping. Collects usage data from GitLab instances.'
+  documentation: https://docs.gitlab.com/ee/development/service_ping/
+  roi: false
+  available: 2018-08-22
+  viable: 2019-01-01
+  competitive: 2024-12-01
+  complete: 2025-12-01
+  marketing: false
+  maturity: viable
+
+application_instrumentation:
+  name: 'Application Instrumentation'
+  stage: monitor
+  direction: /direction/analytics/analytics-instrumentation/
+  description:
+  available: 2022-10-01
+  viable: 2023-12-01
+  competitive: 2024-06-01
+  complete: 2024-12-01
+  marketing: false
+  maturity: minimal
+  priority_level: medium
+
+metrics:
+  name: 'Metrics'
+  stage: monitor
+  documentation:
+  direction: /direction/monitor/observability/
+  description: 'Collect and visualize application performance and health metrics in GitLab.'
+  roi: true
+  available: 2024-12-22
+  viable:
+  competitive:
+  complete:
+  maturity: planned
+  marketing: true
+  priority_level: medium
+  dogfooding_status: Active
+  dogfooding_group: Infrastructure
+  ux_scorecard_link:
+  ux_scorecard_score:
+  label: 'Category:Metrics'
+
+logging:
+  name: 'Logging'
+  stage: monitor
+  documentation:
+  direction: /direction/monitor/observability/
+  description: 'Centralize application and infrastructure logs collection, storage and analysis in GitLab.'
+  roi: false
+  available: 2024-12-22
+  viable:
+  competitive:
+  complete:
+  maturity: planned
+  marketing: true
+  priority_level: medium
+  dogfooding_status: N/A
+  dogfooding_issue:
+  dogfooding_group: Infrastructure
+  ux_scorecard_link:
+  ux_scorecard_score:
+  label: 'Category:Logging'
+
+error_tracking:
+  name: 'Error Tracking'
+  stage: monitor
+  documentation: https://docs.gitlab.com/ee/operations/error_tracking.html
+  direction: /direction/monitor/observability/error_tracking/
+  feature_page: /features/?stage=monitor#error_tracking
+  description: 'Discover and view errors in code through staging and production environments. Surface error information and stack traces to enable efficient debugging strategies, and combine seamlessly with Observability data to deliver software faster.'
+  roi: false
+  available: 2018-12-22
+  viable:
+  competitive:
+  complete:
+  maturity: minimal
+  new_maturity: true
+  marketing: true
+  priority_level: medium
+  dogfooding_status: Active
+  dogfooding_group: Infrastructure
+  ux_scorecard_link:
+  ux_scorecard_score:
+  label: 'Category:Error Tracking'
+
+tracing:
+  name: 'Tracing'
+  stage: monitor
+  documentation: https://docs.gitlab.com/ee/operations/tracing.html
+  direction: /direction/analytics/observability/
+  description: 'Tracing provides insight into the performance and health of a deployed application, tracking each function or microservice which handles a given request. This makes it easy to understand the end-to-end flow of a request, regardless of whether you are using a monolithic or distributed system.'
+  roi: false
+  available: 2023-12-22
+  viable:
+  competitive:
+  complete:
+  maturity: planned
+  marketing: true
+  priority_level: medium
+  dogfooding_status: N/A
+  dogfooding_issue: This category is at the "minimal" level of maturity.
+  dogfooding_group: Infrastructure
+  ux_scorecard_link:
+  ux_scorecard_score:
+  label: 'Category:Tracing'
+
+organization:
+  name: 'Organization'
+  label: Category:Organization
+  stage: data_stores
+  documentation: https://docs.gitlab.com/ee/user/organization/
+  direction: /direction/core_platform/tenant-scale/organization/
+  description: 'Managing your organization.'
+  roi: false
+  dogfooding_status: Planned
+  ux_scorecard_score:
+  marketing: true
+  priority_level: high
+
+user_profile:
+  name: 'User Profile'
+  label: Category:User Profile
+  stage: data_stores
+  feature_labels:
+    - user profile
+    - user creation
+    - user settings
+  documentation: https://docs.gitlab.com/ee/user/profile/
+  direction: /direction/core_platform/tenant-scale/user-profile/
+  description: 'Managing your user profile and configuring what will be visible to others.'
+  roi: false
+  dogfooding_status: Active
+  ux_scorecard_score: '-'
+  marketing: false # not "available" as a capability for customers
+  priority_level: low
+
+groups_and_projects:
+  name: 'Groups & Projects'
+  label: Category:Groups & Projects
+  stage: data_stores
+  feature_labels:
+    - group templates
+    - subgroups
+  documentation: https://docs.gitlab.com/ee/user/group/subgroups/
+  direction: /direction/core_platform/tenant-scale/groups-&-projects/
+  description: 'Organize your projects and restrict access to controlled resources.'
+  roi: false
+  marketing: true
+  available: 2017-03-22
+  viable: 2018-01-01
+  competitive: 
+  complete: # 2023-06-30 leaving date here in case CMS score quals for 'complete' 
+  maturity: competitive
+  dogfooding_status: Active
+  ux_scorecard_score: '-'
+  priority_level: high
+
+global_search:
+  name: Global Search
+  stage: data_stores
+  feature_labels:
+    - elasticsearch
+  description: |
+    Global Search is made up of two primary experiences, Basic Search and Advanced Search.
+
+    Basic Search is the default search experience for self-managed users as well as Free users of GitLab.com. It provides a way to search across the DevOps platform. Basic search includes Code Search for one project.
+
+    Advanced Search, in GitLab Premium and above, is an optional feature that uses Elasticsearch to enable additional search features for sorting, filtering, and improved relevancy.
+  direction: /direction/global-search/
+  documentation: https://docs.gitlab.com/ee/user/search/advanced_search.html
+  roi: false
+  marketing: true
+  available: 2016-01-22
+  viable: 2020-06-22
+  competitive: 2024-01-22
+  complete: 2024-08-22
+  maturity: viable
+  dogfooding_status: Active
+  dogfooding_group: ALL
+  competitors:
+    github:
+      maturity: complete
+      documentation: https://docs.github.com/en/search-github/getting-started-with-searching-on-github/about-searching-on-github
+
+code_search:
+  name: Code Search
+  stage: data_stores
+  feature_labels:
+    - elasticsearch
+  description: |
+    Code Search gives users the ability to explore all their code. Code searches are a significated portion of searches run by users, and Code Search is a fundamental need for organizations with complex or large amounts of code and multiple repositories.
+  direction: /direction/global-search/code-search
+  documentation: https://docs.gitlab.com/ee/user/search/advanced_search.html
+  roi: false
+  marketing: true
+  available: 2016-01-01
+  viable: 2024-03-20
+  competitive: 2024-07-22
+  complete: 2025-01-22
+  maturity: minimal
+  dogfooding_status: Active
+  dogfooding_group: ALL
+  competitors:
+    github:
+      maturity: complete
+      documentation: https://docs.github.com/en/search-github/searching-on-github/searching-code
+
+omnibus_package:
+  name: Omnibus Package
+  stage: systems
+  documentation: https://docs.gitlab.com/omnibus/
+  description: Install a self-managed instance of GitLab using the Omnibus package.
+  roi: false
+  available: 2017-01-01
+  viable: 2017-01-01
+  competitive: 
+  complete: 
+  maturity: complete
+  dogfooding_status: Active
+  dogfooding_issue: https://gitlab.com/gitlab-com/gl-infra/infrastructure/-/issues/12209
+  dogfooding_group: Infrastructure
+  marketing: true
+  direction: /direction/distribution/omnibus/
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/671
+  ux_scorecard_score: C
+
+cloud_native_installation:
+  name: Cloud Native Installation
+  stage: systems
+  documentation: https://docs.gitlab.com/charts/
+  description: Install GitLab in a cloud native environment using Helm.
+  roi: false
+  available: 2018-08-22
+  viable: 2019-03-22
+  competitive: 
+  complete: 2024-06-22
+  maturity: competitive
+  marketing: true
+  direction: /direction/distribution/cloud_native_installation/
+  dogfooding_status: Active
+  dogfooding_issue: https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/112
+  dogfooding_group: Infrastructure
+
+build:
+  name: Build
+  stage: systems
+  documentation: https://docs.gitlab.com/ee/install/
+  description: Ensure the components that make up GitLab are tested, up to date, license compliant, and available for our users’ platforms and architectures.
+  roi: false
+  available: 2016-01-01
+  viable: 2020-01-01
+  competitive: 
+  complete: 2024-07-01
+  maturity: viable
+  marketing: false
+  direction: /direction/distribution/
+  dogfooding_status: Not Planned
+  dogfooding_issue:
+  dogfooding_group:
+
+backup_restore:
+  name: 'Backup/Restore of GitLab instances'
+  stage: systems
+  direction: /direction/geo/backup_restore/
+  documentation: https://docs.gitlab.com/ee/raketasks/backup_restore.html
+  roi: false
+  available: 2015-01-01
+  viable: 2023-10-22
+  complete: 2024-07-22
+  lovable: 2025-07-22
+  maturity: minimal
+  marketing: false
+  dogfooding_status: Not Planned
+  dogfooding_issue:
+  dogfooding_group:
+
+geo_replication:
+  name: 'Geo-replication'
+  stage: systems
+  feature_labels:
+    - Geo Administration
+    - Geo GA
+    - Geo Next Gen
+    - Geo Performance
+    - Geo Replication/Sync
+    - Geo Verification/Accuracy
+    - 'Geo : Automatic Verification'
+    - 'Geo : Kubernetes'
+    - 'Geo : Replication Lag Warning'
+    - 'Geo : Selective Sync'
+  direction: /direction/geo/geo_replication/
+  marketing_page: /solutions/geo/
+  documentation: https://docs.gitlab.com/ee/administration/geo/index.html
+  description: 'Geo-replication provides an easily configurable, read-only mirror (we call it a Geo node) of a GitLab installation that is complete, accurate, verifiable and efficient.'
+  roi: false
+  available: 2018-01-01
+  viable: 2019-09-01
+  competitive: 
+  complete: 2024-12-18
+  maturity: viable
+  marketing: true
+  dogfooding_status: Planned
+  dogfooding_issue: https://gitlab.com/groups/gitlab-org/-/epics/3171
+  dogfooding_group: All
+  ux_scorecard_link: https://gitlab.com/gitlab-org/gitlab-design/-/issues/772
+  ux_scorecard_score: C
+
+disaster_recovery:
+  name: 'Disaster Recovery'
+  stage: systems
+  feature_labels:
+    - Geo DR
+  direction: /direction/geo/disaster_recovery/
+  documentation: https://docs.gitlab.com/ee/administration/geo/disaster_recovery/
+  description: 'Disaster Recovery (DR) helps our customers fulfill their business continuity plans by creating processes that allow the recovery of GitLab following a natural or human-created disaster.'
+  roi: false
+  available: 2018-01-01
+  viable: 2021-02-22
+  competitive: 
+  complete: 2024-06-22
+  maturity: competitive
+  marketing: true
+  dogfooding_status: Planned
+  dogfooding_issue: https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/371
+  dogfooding_group: All
+
+gitaly:
+  name: 'Gitaly'
+  stage: systems
+  feature_labels:
+    - Gitaly HA
+    - Gitaly Cluster
+  documentation: https://docs.gitlab.com/ee/administration/gitaly/
+  direction: /direction/gitaly/
+  description: 'Gitaly is a Git RPC service for handling all the Git calls made by GitLab. Additionally, Gitaly provides Gitaly Cluster, a Highly Available storage solution offering strong consistency, horizontal scaling, and read distribution.'
+  roi: false
+  marketing: false
+  dogfooding_status: Active
+  ux_scorecard_score: '-'
+  priority_level: high
+
+database:
+  name: Database
+  stage: data_stores
+  direction: /direction/database/
+  roi: false
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_group: Engineering
+
+cell:
+  name: Cell
+  stage: data_stores
+  direction: /direction/core_platform/tenant-scale/cell/
+  roi: false
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_group: Engineering
+
+cloud_connector:
+  name: 'Cloud Connector'
+  stage: data_stores
+  direction: /direction/cloud-connector/
+  roi: false
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_group: Engineering
+
+redis:
+  name: Redis
+  stage: platforms
+  direction: /handbook/engineering/infrastructure/team/scalability/
+  roi: false
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_group: Engineering
+
+rate_limiting:
+  name: Rate Limiting Framework
+  stage: platforms
+  direction: /handbook/engineering/infrastructure/team/scalability/
+  roi: false
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_group: Engineering
+
+dedicated:
+  name: 'GitLab Dedicated'
+  stage: platforms
+  direction: /direction/saas-platforms/dedicated/
+  documentation: https://docs.gitlab.com/ee/subscriptions/gitlab_dedicated/
+  description: 'Single-tenant SaaS service'
+  roi: false
+  available: 2022-04-01
+  marketing: false
+
+pubsec_services:
+  name: 'US Public Sector Services'
+  stage: platforms
+  direction: https://internal.gitlab.com/handbook/engineering/fedramp-compliance/
+  documentation: https://docs.gitlab.com/ee/user/
+  description: 'SaaS services for the US Public Sector'
+  roi: false
+  marketing: false
+
+switchboard:
+  name: 'Switchboard'
+  stage: platforms
+  direction: /direction/saas-platforms/switchboard/
+  documentation: https://docs.gitlab.com/ee/subscriptions/gitlab_dedicated/
+  description: 'Management portal for GitLab Dedicated tenant instances. Switchboard will be used both by GitLab Dedicated customers to configure their tenant and internal GitLab teams who support and maintain Dedicated instances.'
+  roi: false
+  available: 2023-08-01
+  marketing: false
+
+delivery:
+  name: 'Delivery'
+  stage: platforms
+  direction: /handbook/engineering/infrastructure/team/delivery/
+  documentation: https://docs.gitlab.com/ee/user/
+  description: 'The Delivery Team enables GitLab Engineering to deliver features in a safe, scalable and efficient fashion to both GitLab.com and self-managed customers.'
+  roi: false
+  available: 2012-01-01
+  marketing: false
+
+scalability:
+  name: 'Scalability'
+  stage: platforms
+  direction: /handbook/engineering/infrastructure/team/scalability/
+  documentation: https://docs.gitlab.com/ee/user/
+  description: 'The Scalability team is responsible for GitLab and GitLab.com at scale, working on the highest priority scaling items related to the application and GitLab.com.'
+  roi: false
+  available: 2012-01-01
+  marketing: false
+  dogfooding_status: Active
+  dogfooding_issue: https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/351
+  dogfooding_group: Release
+
+error_budgets:
+  name: 'Error Budgets'
+  stage: platforms
+  direction: /handbook/engineering/infrastructure/team/scalability/
+  documentation: https://about.gitlab.com/handbook/engineering/error-budgets/
+  description: 'Enabling stage groups to observe how their feature categories perform on GitLab.com'
+  roi: false
+  available: 2012-01-01
+  marketing: false
+
+infrastructure_cost_data:
+  name: 'Infrastructure Cost Data'
+  stage: platforms
+  direction: /direction/saas-platforms/cost-data
+  description: 'Providing infrastructure cost data'
+  roi: false
+  available: 2012-01-01
+  marketing: false
+
+capacity_planning:
+  name: 'Capacity Planning'
+  stage: platforms
+  direction: /handbook/engineering/infrastructure/team/scalability/projections.html#capacity-planning
+  documentation: https://about.gitlab.com/handbook/engineering/infrastructure/capacity-planning/
+  description: 'Tracking resource usage and forecasting excessive saturation or utilization events.'
+  roi: false
+  available: 2012-01-01
+  marketing: false
+
+activation:
+  name: 'Activation'
+  label: 'Category:Activation'
+  stage: growth
+  direction: /handbook/marketing/growth
+  description: 'Focuses on increasing the rate at which new signups find value and begin to adopt the product.'
+
+acquisition:
+  name: 'Acquisition'
+  label: 'Category:Acquisition'
+  stage: growth
+  direction: /handbook/marketing/growth
+  description: 'Focuses on attracting and driving the right people to signup and get started with the product.'
+
+onboarding:
+  name: 'Onboarding'
+  stage: growth
+  direction: /handbook/marketing/growth
+  description: 'Enhancements to the new user onboarding process.'
+
+measurement_and_locking:
+  name: "Measurement and Locking"
+  stage: growth
+  direction: /handbook/marketing/growth
+  description: "Apply limits to what free plans are able to utilize."
+  marketing: false
+
+purchase:
+  name: Purchase
+  stage: fulfillment
+  description: 'Focused on first-order purchase experiences, including SM Web-Direct First Order, SaaS Web-Direct First Order, Purchase compute minutes, Purchase Storage, and Community Programs - sign up.'
+  direction: /direction/fulfillment/purchase/
+  available: 2018-01-01
+  viable: 2020-01-01
+  competitive:
+  complete:
+  maturity: viable
+  marketing: false
+
+seat_cost_management:
+  name: Seat Cost Management
+  stage: fulfillment
+  description: 'Focused on seat usage including seat usage visibility, billable users calculation, and seat limits.'
+  direction:
+  available: 2020-10-19
+  viable: 2022-01-01
+  competitive:
+  complete:
+  maturity: viable
+  marketing: false
+
+commerce_integrations:
+  name: Commerce Integrations
+  stage: fulfillment
+  description: 'Includes the channel partner experience, compliance for partner sourced customers, and CDot integration with SFDC.'
+  direction: /direction/fulfillment/commerce-integrations/
+  available: 2022-04-01
+  viable:
+  competitive:
+  complete:
+  maturity: minimal
+  marketing: false
+
+sm_provisioning:
+  name: SM Provisioning
+  stage: fulfillment
+  description: 'Includes all Self-Managed instance provisioning features such as Cloud License, Offline License, Legacy license, and Trial Licenses'
+  direction:
+  available: 2022-04-01
+  viable: 2022-04-01
+  competitive:
+  complete:
+  maturity: viable
+  marketing: false
+
+saas_provisioning:
+  name: SaaS Provisioning
+  stage: fulfillment
+  description: 'Includes all SaaS instance provisioning features such as Namespace Paid or Trial Plan provisioning and deprovisioning, consumables provisioning and deprovisioning, and more.'
+  direction:
+  available: 2022-04-01
+  viable: 2022-04-01
+  competitive:
+  complete:
+  maturity: viable
+  marketing: false
+
+subscription_management:
+  name: Subscription Management
+  stage: fulfillment
+  description: 'Enable customers to view and modify their billing account and subscriptions. Includes: seat purchases (via Customers Portal or QSR), plan upgrades, subscription cancellation (disabling auto-renewal), renewals (manual or auto-renewal), Community Programs - renewal, payment method management, subscription view with special UX for reseller customers, gitlab.com billing page, viewing invoices, billing account and contact management.'
+  direction:
+  available: 2016-06-09
+  viable: 2022-05-06
+  competitive:
+  complete:
+  maturity: viable
+  marketing: false
+
+consumables_cost_management:
+  name: Consumables Cost Management
+  stage: fulfillment
+  description: 'Gives users visibility into their consumables subscription usage and consumption patterns; providing them with tooling to manage their consumables subscription costs. Includes: storage usage visibility, storage quota, compute usage visibility, and quota of compute minutes.'
+  direction: /direction/fulfillment/utilization/
+  available: 2020-10-19
+  viable: 2023-01-01
+  competitive:
+  complete:
+  maturity: viable
+  marketing: false
+
+fulfillment_infrastructure:
+  name: Fulfillment Infrastructure
+  stage: fulfillment
+  description: 'CustomersDot availability, reliability, performance, scalability, delivery, and observability efforts.'
+  direction: /direction/fulfillment/platform/#infradev-work
+  available: 2017-02-09
+  viable: 2022-06-01
+  competitive:
+  complete:
+  maturity: viable
+  marketing: false
+
+customersdot_application:
+  name: CustomersDot Application
+  stage: fulfillment
+  description: 'Build, improve and maintain the overall CustomersDot Application, including Sign-up/Sign in/SSO, Zuora integration, OTC Data Architecture in CDot.'
+  direction: /direction/fulfillment/platform/#customersdot
+  available: 2017-02-09
+  viable: 2022-06-01
+  competitive:
+  complete:
+  maturity: viable
+  marketing: false
+
+fulfillment_admin_tooling:
+  name: Fulfillment Admin Tooling
+  stage: fulfillment
+  description: 'The Fulfillment Admin Tooling team works with internal teams to build robust systems that enable our internal, customer-facing teams to better support our customers.'
+  direction: /direction/fulfillment/fulfillment-admin-tooling
+  available: 2017-11-01
+  viable: 2024-06-01
+  competitive:
+  complete:
+  maturity: minimal
+  marketing: false
+
+mlops:
+  name: 'MLOps'
+  stage: modelops
+  label: Category:MLOps
+  feature_labels:
+    - 'Python Notebooks'
+  documentation: https://docs.gitlab.com/ee/user/project/ml/model_registry/
+  direction: /direction/modelops/mlops/
+  description: 'Enable Customers to run data science workloads on GitLab'
+  maturity: minimal
+  available: 2021-12-22
+  viable: 2023-12-22
+  competitive: 2024-12-22
+  complete: 2025-12-22
+  marketing: true
+  dogfooding_status: N/A
+
+ai_agents:
+  name: 'AI Agents'
+  stage: modelops
+  label: Category:AI Agents
+  documentation: /handbook/engineering/development/data-science/ai-assisted/
+  direction: /direction/modelops/ai_agents/
+  description: 'Non-technical AI-powered chatbot builder'
+  maturity: planned
+  available: 2024-06-22
+  viable: 
+  complete: 
+  lovable: 
+  marketing: false
+  dogfooding_status: N/A
+
+dataops:
+  name: 'DataOps'
+  stage: modelops
+  label: Category:DataOps
+  documentation:
+  direction: /direction/modelops/dataops/
+  description: 'DataOps will help organizations turn disparate, raw data into data-driven decisions. This will enable new efficiencies within organizations using GitLab, and these new capabilities will be particularly attractive to a CTO, CIO, and data teams.'
+  maturity: planned
+  available: 2024-06-22
+  viable: 2024-12-22
+  competitive: 2025-12-22
+  complete: 2026-12-22
+  marketing: false
+  dogfooding_status: N/A
+
+ai_research:
+  name: 'AI Research'
+  stage: ai-powered
+  label: Category:AI Research
+  documentation: /handbook/engineering/development/data-science/ai-assisted/
+  direction: /direction/ai-powered/ai_model_validation/ai_research
+  description: 'Evaluate models to support AI feature development across GitLab, and pair with product teams to explore and prove out new areas of AI product development.'
+  maturity: minimal
+  available: 2023-09-22
+  viable: 2023-12-22
+  competitive: 2024-12-22
+  complete: 2025-12-22
+  marketing: false
+  dogfooding_status: N/A
+
+code_suggestions:
+  name: 'Code Suggestions'
+  stage: create
+  label: Category:Code Suggestions
+  documentation: https://docs.gitlab.com/ee/user/project/repository/code_suggestions/index.html
+  direction: /direction/create/code_creation/code_suggestions/
+  feature_page: /features/?stage=create#code_suggestions
+  description: 'AI Assistant for proactive coding suggestions and autocompletions'
+  maturity: viable
+  available: 2022-12-22
+  viable: 2023-06-22
+  competitive: 2024-06-22
+  complete: 2025-12-22
+  marketing: true
+
+ai_evaluation:
+  name: 'AI Evaluation'
+  stage: ai-powered
+  label: Category:AI Evaluation
+  documentation: /handbook/engineering/development/data-science/ai-assisted/
+  direction: /direction/ai-powered/ai_model_validation/ai_evaluation
+  description: 'Automated AI Evaluation platform supporting model experimentation and testing'
+  maturity: minimal
+  available: 2023-09-22
+  viable: 2023-12-22
+  competitive: 2024-12-22
+  complete: 2025-12-22
+  marketing: false
+  dogfooding_status: N/A
+
+ai_abstraction_layer:
+  name: 'AI Abstraction Layer'
+  stage: ai-powered
+  label: wg-ai-integration
+  feature_labels:
+    - 'group::ai framework' 
+  documentation: https://docs.gitlab.com/ee/development/ai_architecture.html
+  direction: /direction/ai-powered/ai_framework/ai_abstraction_layer/
+  description: 'AI Abstraction Layer enables AI features across GitLab'
+  maturity: viable
+  available: 2023-04-22
+  viable: 2023-06-22
+  competitive: 2024-06-22
+  complete: 2025-12-22
+  marketing: false
+  dogfooding_status: N/A
+
+custom_models:
+  name: 'Custom Models'
+  stage: ai-powered
+  label: category:custom models
+  documentation: 
+  direction: /direction/ai-powered/ai_framework/custom_models/
+  description: 'Custom Models ground and enriches models with customer data to improve model quality'
+  maturity: planned
+  available: 2024-04-22
+  viable: 2024-08-22
+  complete: 2025-06-22
+  lovable: 2022-12-22
+  marketing: false
+  dogfooding_status: N/A
+
+duo_chat:
+  name: 'Duo Chat'
+  stage: ai-powered
+  label: Category:Duo Chat
+  documentation: https://docs.gitlab.com/ee/user/gitlab_duo_chat.html
+  direction: /direction/ai-powered/duo_chat/
+  description: 'AI chat system to interact with GitLab workflows via natural language'
+  maturity: minimal
+  available: 2023-08-22
+  viable: 2023-12-22
+  competitive: 2024-12-22
+  complete: 2025-12-22
+  marketing: false
+  dogfooding_status: N/A
+
+mobile_devops:
+  name: 'Mobile DevOps'
+  stage: mobile
+  label: 'mobile-devops'
+  documentation:
+  direction: /direction/mobile/mobile-devops
+  description: ''
+  maturity:
+  marketing: false
+
+five_minute_production_app:
+  name: '5 Minute Production App'
+  stage: deploy
+  label: 'group::5MinProduction'
+  documentation:
+  direction: /direction/5-min-production
+  description: 'Improve the ability for Web App developers to quickly create and scale their applications.'
+  roi: false
+  maturity:
+  marketing: false
